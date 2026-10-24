@@ -1,0 +1,4 @@
+LIBRARY OpenInClaude
+EXPORTS
+    DllGetClassObject PRIVATE
+    DllCanUnloadNow PRIVATE
