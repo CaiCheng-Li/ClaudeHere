@@ -71,3 +71,7 @@ The Claude desktop app opens Claude Code in a given folder through the link `cla
 - `context-menu\` is the Windows 11 entry: a small C++ `IExplorerCommand` handler in an MSIX package. It shows only when the selection is one file-system folder that isn't a zip file or a drive root, and it takes its icon from the installed Claude app.
 - Started from inside a packaged app, such as a terminal opened by the Claude desktop app, a script's registry and `%LOCALAPPDATA%` writes get redirected into that app's private storage, where Explorer never looks. `install.ps1` and `uninstall.ps1` check for this and re-run themselves outside it through WMI.
 - `context-menu\test\test.cpp` checks the handler's selection rules and URL encoding without going through Explorer.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
